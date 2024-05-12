@@ -23,7 +23,7 @@ showTable();
 let askSpread, bidSpread, goldValue, silverBidSpread, silverAskSpread, goldBuy, goldSell, silverBuy, silverSell, silverValue, goldValueUSD;
 
 // Gold API KEY
-const API_KEY = 'goldapi-fbqpmirloto20zi-io'
+const API_KEY = 'goldapi-fbqpmirloto20zi-io';
 
 async function fetchData() {
     socket.on('goldValue', (goldValues) => {
@@ -326,7 +326,6 @@ async function showTable() {
             <td>${unitInput} ${weightInput}</td>
             <td id="buyAED">0</td>
             <td id="sellAED">0</td>
-            
             `;
 
             // Append the new row to the table body
@@ -376,3 +375,5 @@ async function showTable() {
         console.error('Error reading data:', error);
     }
 }
+
+
