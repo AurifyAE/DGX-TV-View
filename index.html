@@ -348,16 +348,39 @@
         <div id="date" style="font-size: 40px; color: black; font-weight: 600;"></div>
       </div>
       <div>
-        <div class="news-card" style="margin-top: 30px;">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="margin-top: 38px;">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+            async>
+              {
+                "symbols": [
+                  {
+                    "description": "",
+                    "proName": "FXOPEN:XAUUSD"
+                  },
+                  {
+                    "description": "",
+                    "proName": "FXOPEN:XAGUSD"
+                  }
+                ],
+                  "isTransparent": false,
+                    "showSymbolLogo": true,
+                      "colorTheme": "dark",
+                        "locale": "en"
+              }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- <div class="news-card" style="margin-top: 30px;">
           <div class="news-label">
             <h3>DGX</h3>
             <p>Latest News</p>
           </div>
           <div class="news">
-            <!-- Display News Here -->
             <marquee behavior="scrolling" direction="left" id="displayNews">-</marquee>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="col-lg-6">
