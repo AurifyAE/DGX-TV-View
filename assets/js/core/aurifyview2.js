@@ -380,15 +380,13 @@ async function showTable() {
                 let purity;
                 if (metalInput === "Gold" || metalInput === "Gold kilobar" || metalInput === "Gold TOLA" || metalInput === "Gold TEN TOLA") {
                     metalName = 'Gold';
-                    purity = purityInput;
                 }else if (metalInput === 'Minted Bar'){
-                    metalName = 'Minted Bar';
-                    purity = ' ';
+                    metalName = 'Gold';
                 }
 
                 newRow.innerHTML = `
                     <td style="text-align: right;" id="metalInput">${metalName}</td>
-                    <td style="text-align: left; font-size:25px; font-weight: 600;">${purity}</td>
+                    <td style="text-align: left; font-size:25px; font-weight: 600;">${purityInput}</td>
                     <td >${unitInput} ${weightInput}</td>
                     <td id="buyAED">0</td>
                     <td id="sellAED">0</td>
